@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3f51b5;
+            color: #fff;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #1a237e;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        .form-container {
+            background-color: #673ab7;
+            padding: 40px;
+            margin: 40px auto;
+            border-radius: 10px;
+            max-width: 700px;
+        }
+
+        .form-container h2 {
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .form-container p {
+            font-size: 1.2em;
+            color: #e1bee7;
+            line-height: 1.5;
+        }
+
+        .button {
+            background-color: #ff4081;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #f50057;
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .contact-us {
+            background-color: #1a237e;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact-us a {
+            color: #ff4081;
+            font-size: 1.5em;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .contact-us a:hover {
+            color: #f50057;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3f51b5;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e1bee7;
+            width: 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>About Us</h2>
+        <p>Welcome to the portal, your one-stop destination for all things related to your academic journey! Our platform is designed to enhance your student experience by providing seamless access to essential resources, personalized support, and effective communication tools.</p>
+        <p>Whether you're looking to check your grades, track assignments, register for courses, or connect with peers and faculty, our platform offers a user-friendly interface that helps you stay organized and focused on what matters most — your education.</p>
+    </div>
+
+    <div class="form-container">
+        <h3>New User</h3>
+        <button onclick="window.location.href='registrationpage.html';">Register</button>
+        <h3>Existing User</h3>
+        <button onclick="window.location.href='login.html';">Login</button>
+    </div>
+
+    <hr>
+
+    <div class="contact-us">
+        <h2>Contact Us:</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+        <p>Email: <a href="mailto:nijanthan1860@gmail.com">nijanthan1860@gmail.com</a></p>
+        <p>Phone: <a href="tel:+91xxxxxxxxxx">+91xxxxxxxxxx</a></p>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <a href="https://wa.me/8903558053" target="_blank" title="Contact us on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/yourinstagram" target="_blank" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2025 Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
