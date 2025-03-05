@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .flex {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            flex-direction: row;
+        }
+        .flex > div {
+            background-size: cover;
+            margin: 10px;
+            padding: 200px;
+            font-size: 30px;
+            height: 307px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        /* Hover effect */
+        .flex > div:hover {
+            transform: scale(1.1);  /* Slightly zoom in on hover */
+                
+        }
+
+        .flex > div:nth-child(1) {
+            background-image: url(images.jpeg);
+        }
+
+        .flex > div:nth-child(2) {
+            padding: 150px;
+            height: 50px;
+            background-image: url(1.webp);
+        }
+
+        .flex > div:nth-child(3) {
+            padding: 150px;
+            height: 40px;
+            margin-top: 375px;
+            margin-left: -310px;
+            background-image: url(2.jpg);
+        }
+
+        .flex > div:nth-child(4) {
+            padding: 350px;
+            height: 7px;
+            background-image: url(3.jpeg);
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+    <h1 style="color: aliceblue;background-color: black;text-align: center;">Choose The Food</h1>
+    <div class="flex">
+        <div>1</div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

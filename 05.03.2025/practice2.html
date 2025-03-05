@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    .gridcon{
+        background-color: black;
+        display: grid;
+        gap: 10px;
+    }
+    .griditem{
+        background-color: grey;
+        padding: 20px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="gridcon">
+        <div class="griditem" style="grid-column: 1/span 5;">Image 1</div>
+        <div class="griditem" style="grid-column: 1/span 3;">Image 2</div>
+        <div class="griditem " style="grid-column: 4/span 2;">Image 3</div>
+        <div class="griditem"style="grid-column: 1;grid-row:3;">img</div> 
+        <div class="griditem"style="grid-column: 2/span 4;">Image 5</div>       
+    </div>
+</body>
+</html>
