@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav-container{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 70px;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+        .nav-Brand{
+            padding: 10px;
+            font-size: 45px;
+            font-family: "Dancing Script", cursive;
+            margin-bottom: 20px;    }
+        .nav-HMC{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+            padding: 5px;
+            margin: 5px;
+            font-size: 30px;
+            text-decoration: none;
+            font-family: "Dancing Script", cursive;
+        }
+        .nav-HMC > a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-Signup{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px 15px;
+            gap: 40px;
+            font-size: 90px;
+            font-family: "Dancing Script", cursive;
+
+        }
+        .nav-Signup > button{
+            border-radius: 15px;
+            height: 60px;
+            width: 90px;
+            font-family: "Dancing Script", cursive;
+        }
+        .container2{
+            display: flex;
+            height: 500px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .item1{
+            height: 500px;
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: url(background.jpg);
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .infos > h1{
+            color: white;
+            text-align: center;
+            margin-top: 160px;
+        }
+        .infos > p{
+            color: white;
+            text-align: center;
+        }
+        .nik{
+            border-radius: 30px;
+            margin-left: 47%;
+            height: 10%;
+            width: 8%;
+            margin-bottom: 50px;
+        }
+        .nik:hover{
+            transform: scale(1.1); 
+        }
+        .button{
+                margin-top: -30px;
+            }
+        .explore{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin-top: -15px;
+            margin-left: 10%;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .circleitem1{
+            height: 200px;
+            width: 220px;
+            justify-content: center;
+        }
+        .circleitem2{
+            height: 200px;
+            width: 220px;
+            justify-content: center;
+        }
+        .circleitem3{
+            height: 200px;
+            width: 220px;
+            justify-content: center;
+        
+        }
+        .circleitem4{
+            height: 200px;
+            width: 220px;
+            justify-content: center;}
+        .circleitem5{
+            height: 200px;
+            width: 220px;
+            justify-content: center;
+        }
+        .names{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 80%;
+            align-items: center;
+            margin-left: 200px;
+        }
+        .namebox1{
+            height: 35px;
+            width: 180px;
+            border: 2px solid black;
+        }
+        @media only screen and (max-width: 600px) {
+            .nav-HMC{
+            display: none;
+            }
+            .infos > p{
+                display: none;
+            }
+            .nik{
+            display: inline-block;
+            border-radius: 30px;
+            margin-left: 35%;
+            height: 10%;
+            width: 30%;
+            margin-top: -100px;
+            }
+            .nik:hover {
+            transform: scale(1.1);
+            }
+            .item1{
+            height: 500px;
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: url(1.jpg);
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+            .nav-container{
+                background-color: orange;
+                padding: 10px;
+            }
+            body{
+                margin: -30px;
+                padding: 0%;
+            }
+            
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-Brand">Food Holic</div>
+        <div class="nav-HMC"><a href="/">Home</a><a href="/">Menu</a><a href="/">Contact Us</a></div>
+        <div class="nav-Signup">
+            <a href="cart.html">
+                <img src="icons8-cart-32.png" alt="Cart" style="margin-bottom: 20px;">
+            </a>
+            <button class="button">Sign Up</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item1">
+            <div class="infos"><h1>Order Your Favorite Food Here</h2>
+                <p>"Feeling hungry? Satisfy your cravings with just a few taps on our Food App! 🍔🍕<br> From sizzling hot pizzas to mouthwatering burgers, we bring your favorite meals straight to your doorstep—fresh,<br> fast, and hassle-free. 🚀🍽️ Order now and enjoy delicious food anytime, anywhere!"</p>
+                <button class="nik">Click Here</button>
+            </div>
+        </div>
+    </div><br>
+    <h2 style="margin-left: 10%;font-size: 250%;">Explore Our Items</h2>
+    <p style="margin-left: 10%;font-size: 150%;">Explore our delicious food anywhere!</p><br>
+    <div class="explore">
+        <div class="circleitem1"><img src="biriyani.jpeg" height="200px" width="200px" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Biriyani</h2></div>
+        <div class="circleitem2"><img src="salad.jpeg"height="200px" width="200px" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Salad</h2></div>
+        <div class="circleitem3"><img src="rolls.jpeg" height="200px" width="200px" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Rolls</h2></div>
+        <div class="circleitem4"><img src="cakes.jpeg" height="200px" width="200px" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Cakes</h2></div>
+        <div class="circleitem5"><img src="chat.jpeg" height="200px" width="200px" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Cakes</h2></div>
+    </div>
+</body>
+</html>
